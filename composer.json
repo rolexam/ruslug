@@ -1,0 +1,38 @@
+{
+    "name": "rolexam/ruslug",
+    "description": "Laravel 6 RuSlug, Transliteration RU -> ENG",
+    "keywords": [
+        "laravel",
+        "slug",
+        "ru",
+        "translit"
+    ],
+    "authors": [
+        {
+            "name": "rolexam",
+            "email": "simon.zohrabyan@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/rolexam/ruslug",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.*|6.*|7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rolexam\\Ruslug\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rolexam\\Ruslug\\RuslugServiceProvider"
+            ],
+            "aliases": {
+                "Slug": "Rolexam\\Ruslug\\RuslugFacade"
+            }
+        }
+    }
+}
